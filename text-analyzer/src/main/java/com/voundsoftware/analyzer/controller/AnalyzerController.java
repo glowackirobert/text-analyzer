@@ -29,11 +29,11 @@ public class AnalyzerController {
         LOGGER.info("searchOccurrences(input: {}, query: {})", input, query);
         if (input.isBlank()) {
             LOGGER.warn("User input is blank");
-            return ResponseEntity.unprocessableEntity()
-                .build();
+            return ResponseEntity.unprocessableEntity().build();
         } else {
-            return ResponseEntity.status(HttpStatus.OK)
-                .build();
+            Occurrence occurrences = analyzerService.retrieveOccurrences(input, query);
+            LOGGER.info("searchOccurrences(...) = {}", occurrences);
+            return ResponseEntity.status(HttpStatus.OK).build();
         }
     }
 }
