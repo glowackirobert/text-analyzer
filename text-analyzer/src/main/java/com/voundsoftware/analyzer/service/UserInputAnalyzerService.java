@@ -23,9 +23,9 @@ public class UserInputAnalyzerService implements AnalyzerService {
         var words = multipleWordsSplitter(query);
         List<String> occurrences = new ArrayList<>();
         for (String word : words) {
-            var index = input.indexOf(word);
+            var index = input.indexOf(word.trim());
             while (index != -1) {
-                occurrences.add(word);
+                occurrences.add(word.trim());
                 index = input.indexOf(word, index + word.length());
             }
         }
