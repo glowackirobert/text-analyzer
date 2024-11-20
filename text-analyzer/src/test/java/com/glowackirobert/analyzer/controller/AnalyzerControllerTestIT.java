@@ -1,5 +1,7 @@
-package com.voundsoftware.analyzer.controller;
+package com.glowackirobert.analyzer.controller;
 
+import static org.hamcrest.Matchers.contains;
+import static org.hamcrest.Matchers.containsInRelativeOrder;
 import static org.hamcrest.Matchers.stringContainsInOrder;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -32,7 +34,7 @@ class AnalyzerControllerTestIT {
             .andExpect(status().isOk())
             .andExpect(jsonPath("input").value(input))
             .andExpect(jsonPath("values", hasSize(3)))
-            .andExpect(jsonPath("values", stringContainsInOrder("quick", "fox", "dog")));
+            .andExpect(jsonPath("values", contains("quick", "fox", "dog")));
     }
 
     @Test
