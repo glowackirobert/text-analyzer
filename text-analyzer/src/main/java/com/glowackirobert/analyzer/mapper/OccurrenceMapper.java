@@ -1,6 +1,6 @@
-package com.voundsoftware.analyzer.mapper;
+package com.glowackirobert.analyzer.mapper;
 
-import com.voundsoftware.analyzer.dto.Occurrence;
+import com.glowackirobert.analyzer.dto.Occurrence;
 
 import java.util.List;
 import java.util.function.BiFunction;

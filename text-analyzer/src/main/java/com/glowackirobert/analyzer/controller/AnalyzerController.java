@@ -1,4 +1,4 @@
-package com.voundsoftware.analyzer.controller;
+package com.glowackirobert.analyzer.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.voundsoftware.analyzer.dto.Occurrence;
-import com.voundsoftware.analyzer.service.AnalyzerService;
+import com.glowackirobert.analyzer.dto.Occurrence;
+import com.glowackirobert.analyzer.service.AnalyzerService;
 
 @RestController
 @RequestMapping("/api/v1")

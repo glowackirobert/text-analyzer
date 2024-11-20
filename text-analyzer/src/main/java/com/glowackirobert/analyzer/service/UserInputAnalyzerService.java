@@ -1,6 +1,6 @@
-package com.voundsoftware.analyzer.service;
+package com.glowackirobert.analyzer.service;
 
-import static com.voundsoftware.analyzer.mapper.OccurrenceMapper.toOccurrenceMapper;
+import static com.glowackirobert.analyzer.mapper.OccurrenceMapper.toOccurrenceMapper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import com.voundsoftware.analyzer.dto.Occurrence;
+import com.glowackirobert.analyzer.dto.Occurrence;
 
 @Service
 public class UserInputAnalyzerService implements AnalyzerService {

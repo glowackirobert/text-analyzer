@@ -1,6 +1,6 @@
-package com.voundsoftware.analyzer.service;
+package com.glowackirobert.analyzer.service;
 
-import com.voundsoftware.analyzer.dto.Occurrence;
+import com.glowackirobert.analyzer.dto.Occurrence;
 
 public interface AnalyzerService {
 

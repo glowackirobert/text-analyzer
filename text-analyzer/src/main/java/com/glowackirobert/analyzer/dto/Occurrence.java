@@ -1,4 +1,4 @@
-package com.voundsoftware.analyzer.dto;
+package com.glowackirobert.analyzer.dto;
 
 import java.util.List;
 

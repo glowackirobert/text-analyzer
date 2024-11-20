@@ -1,4 +1,4 @@
-package com.voundsoftware.analyzer;
+package com.glowackirobert.analyzer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
