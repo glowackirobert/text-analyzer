@@ -1,8 +1,6 @@
 package com.glowackirobert.analyzer.controller;
 
 import static org.hamcrest.Matchers.contains;
-import static org.hamcrest.Matchers.containsInRelativeOrder;
-import static org.hamcrest.Matchers.stringContainsInOrder;
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
