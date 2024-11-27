@@ -20,6 +20,10 @@ public class UserInputAnalyzerService implements AnalyzerService {
 
     public Occurrence retrieveOccurrences(String input, String query) {
         LOGGER.info("retrieveOccurrences(input: {}, query:{})", input, query);
+        if (input == null || query == null || input.isEmpty() || query.isEmpty()) {
+            return new Occurrence(input, new ArrayList<>());
+        }
+
         var words = multipleWordsSplitter(query);
         List<String> occurrences = new ArrayList<>();
         for (String word : words) {
@@ -38,3 +42,4 @@ public class UserInputAnalyzerService implements AnalyzerService {
         return query.split(COMMA_REGEX);
     }
 }
+
